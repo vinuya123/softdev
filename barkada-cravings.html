@@ -2,26 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barkada Cravings - Changie Food Center</title>
+    <title>Meal Cravings - Changie Food Center</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #fdbb2d; /* Yellow color for the title */
+            font-size: 36px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+            max-width: 900px; /* Ensures the items are centered */
+            margin: 0 auto; /* Centers the grid on the page */
+        }
+
+        .menu-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.2s;
+        }
+
+        .menu-item img {
+            width: 200px; /* Fixed width for the images */
+            height: 150px; /* Fixed height for the images */
+            object-fit: cover; /* Ensures the images cover the specified dimensions without distortion */
+            border-radius: 8px 8px 0 0;
+        }
+
+        .menu-item .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #d9232d;
+        }
+
+        .menu-item .price {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
+
     <header>
         <a href="home.html">
             <img src="images/Logo.png" alt="Logo" class="logo-img">
         </a>
-        <a href="home.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="menu.html">Menu</a>
-        <a href="promos.html">Promos</a>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="promos.html">Promos</a>
     </header>
 
+    <h1>Barkada Cravings</h1>
     <div class="container">
-        <h1>Barkada Cravings</h1>
-        <img src="images/barkada.jpg" alt="Barkada Cravings Image">
-        <p>Details about Barkada Cravings...</p>
-        <a href="menu.html" class="view-full-menu">Back to Menu</a>
+        <!-- Menu Item 1 -->
+        <div class="menu-item">
+            <img src="images/Chicken Barkada Cravings.png" alt="Chicken Barkada Cravings">
+            <div class="title">Chicken Barkada Cravings</div>
+            <div class="price">Good For 3-5</div>
+            <div class="price">₱368.00</div>
+        </div>
+
+        <!-- Menu Item 2 -->
+        <div class="menu-item">
+            <img src="images/Calamares Barkada Cravings.png" alt="Calamares Barkada Cravings">
+            <div class="title">Calamares Barkada Cravings</div>
+            <div class="price">Good For 3-5</div>
+            <div class="price">₱398.00</div>
+        </div>
+
+        <!-- Menu Item 3 -->
+        <div class="menu-item">
+            <img src="images/Snack Barkada Cravings.png" alt="Snack Barkada Cravings">
+            <div class="title">Snack Barkada Cravings</div>
+            <div class="price">₱Good For 3-5</div>
+            <div class="price">₱388.00</div>
+        </div>
     </div>
 
     <footer>
@@ -36,5 +113,6 @@
         </a>
         <p>Contact us</p>
     </footer>
+
 </body>
 </html>
