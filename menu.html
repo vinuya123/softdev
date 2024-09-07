@@ -8,11 +8,11 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f7f7f7; /* White grainy background */
+            background: #f7f7f7;
             color: #333;
             margin: 0;
             padding: 0;
-            background-image: url('your-grainy-background.png'); /* Replace with your grainy background image */
+            background-image: url('images/Background.jpg');
             background-size: cover;
         }
 
@@ -22,13 +22,13 @@
         }
 
         h1 {
-            color: #fdbb2d; /* Yellow color for the title */
+            color: #fdbb2d;
             font-size: 36px;
             margin-bottom: 10px;
         }
 
         p {
-            color: #b71c1c; /* Red color for the subtitle */
+            color: #000000;
             font-size: 18px;
             margin-bottom: 50px;
         }
@@ -40,14 +40,14 @@
         }
 
         .menu-item {
-            background-color: #b71c1c; /* Red background for menu items */
+            background-color: #b71c1c;
             padding: 20px;
             border-radius: 10px;
             width: 200px;
             margin-bottom: 20px;
             color: #fff;
             transition: transform 0.3s;
-            text-decoration: none; /* Remove underline from links */
+            text-decoration: none;
         }
 
         .menu-item:hover {
@@ -55,9 +55,9 @@
         }
 
         .menu-item img {
-            width: 200px; /* Fixed width for the images */
-            height: 150px; /* Fixed height for the images */
-            object-fit: cover; /* Ensures the images cover the specified dimensions without distortion */
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
             border-radius: 10px;
         }
 
@@ -70,6 +70,54 @@
         .menu-item p {
             margin: 5px 0 10px;
         }
+
+        .view-full-menu {
+            display: inline-block;
+            background-color: #b71c1c;
+            color: #fff;
+            padding: 10px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .view-full-menu:hover {
+            background-color: #fdbb2d;
+            color: #b71c1c;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 0px;
+            background-color: #ff0000;
+            color: white;
+        }
+
+        /* Social icons container */
+        .social-icons {
+            display: inline-flex; /* Inline-flex to group the icons together */
+            gap: 5px; /* Spacing between the icons */
+            margin-bottom: 3px;
+            margin-top: 10px;
+        }
+
+        .social-icon {
+            width: 30px;
+            transition: transform 0.3s;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1); /* Slight zoom on hover */
+        }
+
+        footer p {
+            margin-top: 5px;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
     </style>
 </head>
 
@@ -110,16 +158,22 @@
         </div>
     </div>
 
+    <!-- Arrow element -->
+    <div id="arrow" class="arrow"></div>
+
+    <!-- Footer with grouped social icons -->
     <footer>
-        <a href="https://www.facebook.com/MyChangieFriedChicken" target="_blank">
-            <img src="images/FacebookLogo.png" alt="Facebook" class="social-icon">
-        </a>
-        <a href="https://www.instagram.com/changie.food.center" target="_blank">
-            <img src="images/InstagramLogo.png" alt="Instagram" class="social-icon">
-        </a>
-        <a href="https://www.tiktok.com/@changiefoodcenter?lang=en" target="_blank">
-            <img src="images/TikTokLogo.png" alt="TikTok" class="social-icon">
-        </a>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/MyChangieFriedChicken" target="_blank">
+                <img src="images/FacebookLogo.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/changie.food.center" target="_blank">
+                <img src="images/InstagramLogo.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.tiktok.com/@changiefoodcenter?lang=en" target="_blank">
+                <img src="images/TikTokLogo.png" alt="TikTok" class="social-icon">
+            </a>
+        </div>
         <p>Contact us</p>
     </footer>
     

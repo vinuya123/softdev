@@ -131,7 +131,7 @@ header a {
 
 footer {
     background-color: red;
-    padding: 5px 0;
+    padding: 20px;
     text-align: center;
     color: white;
     font-weight: bold;
@@ -140,6 +140,19 @@ footer {
     font-size: 14px; /* Smaller font size */
     
 }   
+
+.social-contact {
+    display: flex;
+    flex-direction: column; /* Stack the icons and the text vertically */
+    align-items: center; /* Center them horizontally */
+    margin-top: 50px; /* Adjust vertical position of the whole group */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Align icons horizontally */
+    margin-bottom: 10px; /* Adjust vertical position of the whole group */
+}
 
 .social-icon {
     width: 20px; /* Smaller size for social media icons */
@@ -152,4 +165,45 @@ footer a {
     color: white;
     text-decoration: none;
     display: inline-block;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background-color: #b71c1c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    margin-bottom: 20px;
+    color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Initial shadow effect */
+    will-change: transform, box-shadow; /* Hint to browser for better performance */
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.5); /* Increased shadow effect on hover */
+}
+
+.menu-item img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.menu-item p {
+    margin: 5px 0 10px;
 }
